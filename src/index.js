@@ -4,7 +4,7 @@ import { createCard, likeCard } from './scripts/components/card';
 import { closeModal, openModal, closePopupByOverlay } from './scripts/modal';
 import { openImage } from './scripts/components/openImagePopup';
 import { openEditProfile, editProfile } from './scripts/components/editProfile';
-import { addNewCard, newForm } from './scripts/components/addNewCard';
+import { newForm, addNewCard } from './scripts/components/addNewCard';
 
 // Контейнер карточек на странице
 const placesList = document.querySelector('.places__list');

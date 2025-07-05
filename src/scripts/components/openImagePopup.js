@@ -1,11 +1,12 @@
 import { openModal } from "../modal";
 
 const modalTypeImage = document.querySelector('.popup_type_image');
+const popupImage = modalTypeImage.querySelector('.popup__image');
+const popupCaption = modalTypeImage.querySelector('.popup__caption');
 
 export function openImage(image, title) {
-    const popupImage = modalTypeImage.querySelector('.popup__image');
     popupImage.src = image.src;
     popupImage.alt = image.alt;
-    modalTypeImage.querySelector('.popup__caption').textContent = title.textContent;
+    popupCaption.textContent = title.textContent;
     openModal(modalTypeImage);
 }
